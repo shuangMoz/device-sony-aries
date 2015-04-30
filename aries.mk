@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
     device/sony/aries/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.preset:/system/etc/tfa98xx/VoiceCallEarpice_top.preset \
     device/sony/aries/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.eq:/system/etc/tfa98xx/VoiceCallEarpice_top.eq
 
-PRODUCT_NAME := aosp_d5803
+PRODUCT_NAME := aries
 PRODUCT_DEVICE := aries
 PRODUCT_MODEL := Xperia Z3 Compact (AOSP)
 PRODUCT_BRAND := Sony
