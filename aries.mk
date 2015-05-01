@@ -84,3 +84,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     device/sony/aries/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
     device/sony/aries/volume.cfg:system/etc/volume.cfg
+
+vendor_binary_files := $(strip $(wildcard device/sony/shinano/BoardConfig.mk))
+ifeq ($(vendor_binary_files),)
+  $(error Vendor binary files are not found. Please download from: \
+  http://dl-developer.sonymobile.com/eula/SW_binaries_for_Xperia_AOSP_Lollipop_MR1_v5_EULA.html, \
+  then extract in B2G dir and try again.)
+endif
