@@ -81,6 +81,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.usb.pid_suffix=1BB
 
+# Enable virtual home button for b2g
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.moz.has_home_button=0
+
 PRODUCT_COPY_FILES += \
     device/sony/aries/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
     device/sony/aries/volume.cfg:system/etc/volume.cfg
